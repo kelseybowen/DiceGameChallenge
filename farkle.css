@@ -1,0 +1,81 @@
+img {
+	width: 80px;
+}
+
+body {
+	background-color: #fff;
+	background-image: linear-gradient(-90deg, #667be6, #754da3);
+	font-family: arial;
+}
+
+.container>.row {
+	display: flex;
+}
+
+.row {
+	margin: auto;
+	width: 65%;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+
+.header {
+	height: 100px;
+	max-height: 100%;
+	font-size: 50px;
+	text-align: center;
+	line-height: 100px;
+	font-family: arial;
+	color: #fff;
+}
+
+.dice {
+	max-width: 520px;
+	margin: 0 auto;
+}
+
+.score {
+	background-color: rgba(52, 52, 52, 0.3);
+	color: #fff;
+	height: 60px;
+	max-height: 100%;
+	font-size: 32px;
+	text-align: center;
+	line-height: 60px;
+	width: 120px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.button {
+	background-color: blue;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	border: none;
+	width: 150px;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+.reset {
+	background-color: red;
+}
+
+.bank {
+	background-color: green;
+}
+
+
+.roll {}
+
+.roll:hover {}
+
+.bank {}
+
+.bank:hover {}
+
+.transparent {
+	/*For dice that are selected*/
+	opacity: 0.75;
+}
