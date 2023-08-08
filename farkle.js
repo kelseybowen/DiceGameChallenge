@@ -69,7 +69,6 @@ function checkScore() {
 }
 
 function bankScore() {
-	console.log("banking score")
 	var rollsToScore = [];
 	for (var i = 0; i < 6; i++) {
 		if (diceArr[i].clicked === 1) {
@@ -77,8 +76,8 @@ function bankScore() {
 		}
 	}
 	rollsToScore.sort();
-	console.log(rollsToScore);
 
+	// attempting to prevent a single die from being counted more than once
 	function removeDiceFromScoring(i) {
 		var idx = rollsToScore.indexOf(i);
 		if (idx > -1) {
@@ -119,9 +118,10 @@ function bankScore() {
 	document.getElementById("gameTotal").innerHTML = points;
 }
 
-function resetGame(){
-	points = 0;
-	document.getElementById("gameTotal").innerHTML = points;
-	initializeDice();
-	console.log(points);
-}
+// reset functionality has a bug, not fully working yet 
+// function resetGame(){
+// 	points = 0;
+// 	document.getElementById("gameTotal").innerHTML = points;
+// 	initializeDice();
+// 	console.log(points);
+// }
